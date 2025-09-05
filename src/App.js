@@ -57,8 +57,9 @@ export default function App() {
       <section id="home" className="h-screen flex flex-col justify-center items-center text-center">
         <h2 className="text-5xl font-extrabold text-white">Mushini Lakshmi Sravanthi</h2>
         <p className="mt-4 text-lg text-gray-300">
-          Final Year CSE (Artificial Intelligence & Machine Learning) Student | Aspiring Full-Stack Developer
-        </p>
+           Final Year CSE (Artificial Intelligence & Machine Learning) Student | Aspiring Full-Stack Developer <br />
+    Skilled in building responsive web applications, solving complex algorithms, and exploring emerging AI & ML technologies.
+  </p>
         <div className="mt-6 space-x-4">
           <a href="#projects" className="bg-purple-500 text-white px-6 py-2 rounded-lg font-semibold hover:bg-purple-400 transition">
             View Projects
@@ -103,7 +104,7 @@ export default function App() {
         {renderSkills(tools)}
       </section>
 
-      {/* 🔹 Projects Section */}
+      {/* 🔹 Projects Section (enhanced with highlights) */}
       <section id="projects" className="py-20 px-6 md:px-20">
         <h2 className="text-3xl font-bold text-purple-400 mb-10 text-center">Projects</h2>
         <div className="grid md:grid-cols-2 gap-8">
@@ -111,19 +112,30 @@ export default function App() {
           <div className="bg-gray-800 p-6 rounded-2xl shadow-lg hover:scale-105 hover:shadow-purple-500/40 transition">
             <h3 className="text-2xl font-bold text-purple-400 mb-2">MediConnect</h3>
             <p className="text-gray-300">
-              A <strong>full-stack healthcare management platform</strong> that lets users <strong>search hospitals, view hospital details, and book doctor appointments</strong>.  
-              <br /><br />
-              <strong>Tech Stack:</strong> React, Django REST Framework, MongoDB
+              A <strong>full-stack healthcare management platform</strong> where I actively worked on:
+              <ul className="list-disc list-inside mt-2 space-y-1 text-gray-200">
+                <li><strong>User Registration/Login</strong> with secure authentication</li>
+                <li><strong>Location-based hospital search</strong> within a 50km radius</li>
+                <li><strong>Hospital detail viewing</strong> with department & doctor information</li>
+                <li><strong>Appointment booking system</strong> with date and time selection</li>
+                <li>Developed using <strong>React, Django REST Framework, and MongoDB</strong></li>
+                <li>Responsive UI with <strong>Tailwind CSS</strong> for seamless user experience</li>
+              </ul>
             </p>
           </div>
+
           {/* QuickCart */}
           <div className="bg-gray-800 p-6 rounded-2xl shadow-lg hover:scale-105 hover:shadow-purple-500/40 transition">
             <h3 className="text-2xl font-bold text-purple-400 mb-2">QuickCart</h3>
             <p className="text-gray-300">
-              An <strong>e-commerce web app</strong> where users can <strong>browse products, filter items, search, and add to cart</strong>.  
-              Includes <strong>user authentication</strong> and deployed on <strong>Netlify</strong>.  
-              <br /><br />
-              <strong>Tech Stack:</strong> React, Firebase, CSS
+              An <strong>e-commerce web app</strong> where I focused on:
+              <ul className="list-disc list-inside mt-2 space-y-1 text-gray-200">
+                <li><strong>Product browsing, filtering, and search functionality</strong></li>
+                <li><strong>User authentication</strong> and secure login</li>
+                <li>Cart management with <strong>add/remove items</strong></li>
+                <li>Deployed live on <strong>Netlify</strong></li>
+                <li>Built using <strong>React, Firebase, and CSS</strong></li>
+              </ul>
             </p>
             <a
               href="https://quickcartonlineshopping.netlify.app/"
@@ -138,7 +150,40 @@ export default function App() {
       </section>
 
       {/* 🔹 Education Section */}
-      {/* Keep same as before */}
+      <section id="education" className="py-20 px-6 md:px-20">
+        <h2 className="text-3xl font-bold text-purple-400 mb-10 text-center">Education</h2>
+        <div className="space-y-6 max-w-3xl mx-auto">
+          {/* B.Tech */}
+          <div className="bg-gray-800 p-8 rounded-2xl shadow-md hover:shadow-purple-500/40 transition flex items-center space-x-6">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqugbX1bi7VLceyM1W3jpaDKJkcXJuHgSuPg&s" alt="B.Tech Icon" className="w-28 h-28"/>
+            <div>
+              <h3 className="text-2xl font-semibold text-white mb-2">B.Tech in Computer Science & Engineering (AI & ML)</h3>
+              <p className="text-gray-300 mb-1">BVCITS</p>
+              <p className="text-gray-400">2022 - 2026 <h1>7.25 CGPA</h1></p>
+            </div>
+          </div>
+
+          {/* Intermediate */}
+          <div className="bg-gray-800 p-8 rounded-2xl shadow-md hover:shadow-purple-500/40 transition flex items-center space-x-6">
+            <img src="https://content.jdmagicbox.com/v2/comp/amalapuram/w5/9999p8856.8856.230906121138.s5w5/catalogue/sri-chaitanya-college-vanacharla-vari-street-amalapuram-colleges-KFxYMAm2qF.jpg" alt="Intermediate Icon" className="w-28 h-28"/>
+            <div>
+              <h3 className="text-2xl font-semibold text-white mb-2">Intermediate (MPC)</h3>
+              <p className="text-gray-300 mb-1">Sri Chaitanya Junior College, Rajahmundry</p>
+              <p className="text-gray-400">2020 - 2022<h1>63%</h1> </p>
+            </div>
+          </div>
+
+          {/* SSC */}
+          <div className="bg-gray-800 p-8 rounded-2xl shadow-md hover:shadow-purple-500/40 transition flex items-center space-x-6">
+            <img src="https://images.jdmagicbox.com/v2/comp/east-godavari/s3/9999px883.x883.180302113222.s2s3/catalogue/pragnya-school-kothapeta-east-godavari-schools-gzh3uuywrs.jpg" alt="SSC Icon" className="w-28 h-28"/>
+            <div>
+              <h3 className="text-2xl font-semibold text-white mb-2">SSC</h3>
+              <p className="text-gray-300 mb-1">Pragnya School, Kothapeta</p>
+              <p className="text-gray-400">2019 - 2020 <h1>8.6 CGPA</h1></p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* 🔹 Contact Section */}
       <section id="contact" className="py-20 px-6 md:px-20 text-center">
@@ -147,15 +192,14 @@ export default function App() {
           I’m open to internships and entry-level full-stack developer roles. Let’s connect and collaborate!
         </p>
 
-        {/* Email and Phone (slightly bigger) */}
+        {/* Email and Phone */}
         <p className="text-lg sm:text-xl md:text-2xl font-semibold text-purple-400 mb-8">
           📧 lakshmisravanthi02@gmail.com <br />
           📞 +91 7286973114
         </p>
 
-        {/* GitHub and LinkedIn Boxes with Icons */}
+        {/* GitHub and LinkedIn */}
         <div className="max-w-md mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/lakshmi-sravanthi-mushini-115aa6294/"
             target="_blank"
@@ -168,7 +212,6 @@ export default function App() {
             LinkedIn
           </a>
 
-          {/* GitHub */}
           <a
             href="https://github.com/Sravanthi908"
             target="_blank"
