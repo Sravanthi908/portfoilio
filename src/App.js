@@ -22,44 +22,55 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] text-gray-100">
-      {/* 🔹 Navbar */}
-      <header className="fixed top-0 w-full flex justify-between items-center px-8 py-4 bg-black/40 backdrop-blur-md z-50">
-        <h1 className="text-white font-bold text-2xl">Lakshmi Sravanthi</h1>
-        <nav className="space-x-6">
-          <a href="#home" className="hover:text-purple-400">Home</a>
-          <a href="#about" className="hover:text-purple-400">About</a>
-          <a href="#skills" className="hover:text-purple-400">Skills</a>
-          <a href="#projects" className="hover:text-purple-400">Projects</a>
-          <a href="#education" className="hover:text-purple-400">Education</a>
-          <a href="#contact" className="hover:text-purple-400">Contact</a>
-        </nav>
-        <div className="space-x-3">
-          <a
-            href="https://www.linkedin.com/in/lakshmi-sravanthi-mushini-115aa6294/"
-            target="_blank"
-            rel="noreferrer"
-            className="px-4 py-2 border border-purple-500 text-purple-400 rounded-lg font-semibold hover:bg-purple-500 hover:text-white transition"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="https://github.com/Sravanthi908"
-            target="_blank"
-            rel="noreferrer"
-            className="px-4 py-2 border border-purple-500 text-purple-400 rounded-lg font-semibold hover:bg-purple-500 hover:text-white transition"
-          >
-            GitHub
-          </a>
-        </div>
-      </header>
+     {/* 🔹 Navbar */}
+<header className="fixed top-0 w-full flex justify-between items-center px-8 py-4 bg-black/40 backdrop-blur-md z-50">
+  <h1 className="text-white font-bold text-2xl">Lakshmi Sravanthi</h1>
+  <nav className="space-x-6">
+    <a href="#home" className="hover:text-purple-400">Home</a>
+    <a href="#about" className="hover:text-purple-400">About</a>
+    <a href="#skills" className="hover:text-purple-400">Skills</a>
+    <a href="#projects" className="hover:text-purple-400">Projects</a>
+    <a href="#education" className="hover:text-purple-400">Education</a>
+    <a href="#contact" className="hover:text-purple-400">Contact</a>
+  </nav>
+
+  {/* 🔹 GitHub, LeetCode, LinkedIn */}
+  <div className="space-x-3">
+    <a
+      href="https://github.com/Sravanthi908"
+      target="_blank"
+      rel="noreferrer"
+      className="px-4 py-2 border border-purple-500 text-purple-400 rounded-lg font-semibold hover:bg-purple-500 hover:text-white transition"
+    >
+      GitHub
+    </a>
+    <a
+      href="https://leetcode.com/u/Sravanthi34/"
+      target="_blank"
+      rel="noreferrer"
+      className="px-4 py-2 border border-yellow-500 text-yellow-400 rounded-lg font-semibold hover:bg-yellow-500 hover:text-white transition"
+    >
+      LeetCode
+    </a>
+    <a
+      href="https://www.linkedin.com/in/lakshmi-sravanthi-mushini-115aa6294/"
+      target="_blank"
+      rel="noreferrer"
+      className="px-4 py-2 border border-blue-500 text-blue-400 rounded-lg font-semibold hover:bg-blue-500 hover:text-white transition"
+    >
+      LinkedIn
+    </a>
+  </div>
+</header>
+
 
       {/* 🔹 Hero Section */}
       <section id="home" className="h-screen flex flex-col justify-center items-center text-center">
         <h2 className="text-5xl font-extrabold text-white">Mushini Lakshmi Sravanthi</h2>
         <p className="mt-4 text-lg text-gray-300">
-           Final Year CSE (Artificial Intelligence & Machine Learning) Student | Aspiring Full-Stack Developer <br />
-    Skilled in building responsive web applications, solving complex algorithms, and exploring emerging AI & ML technologies.
-  </p>
+          Final Year CSE (Artificial Intelligence & Machine Learning) Student | Aspiring Full-Stack Developer <br />
+          Skilled in building responsive web applications, solving complex algorithms, and exploring emerging AI & ML technologies.
+        </p>
         <div className="mt-6 space-x-4">
           <a href="#projects" className="bg-purple-500 text-white px-6 py-2 rounded-lg font-semibold hover:bg-purple-400 transition">
             View Projects
@@ -96,15 +107,18 @@ export default function App() {
       {/* 🔹 Skills Section */}
       <section id="skills" className="py-20 px-6 md:px-20">
         <h2 className="text-3xl font-bold text-purple-400 mb-10 text-center">Skills</h2>
-        <h3 className="text-xl font-semibold mb-4 text-white">Frontend</h3>
+        
+        <h3 className="text-2xl font-bold mb-4 text-purple-300 underline bg-black/30 px-3 py-1 rounded-md inline-block">Frontend Skills</h3>
         {renderSkills(frontend)}
-        <h3 className="text-xl font-semibold mb-4 text-white">Backend</h3>
+
+        <h3 className="text-2xl font-bold mb-4 text-purple-300 underline bg-black/30 px-3 py-1 rounded-md inline-block">Backend Skills</h3>
         {renderSkills(backend)}
-        <h3 className="text-xl font-semibold mb-4 text-white">Development Tools</h3>
+
+        <h3 className="text-2xl font-bold mb-4 text-purple-300 underline bg-black/30 px-3 py-1 rounded-md inline-block">Development Tools</h3>
         {renderSkills(tools)}
       </section>
 
-      {/* 🔹 Projects Section (enhanced with highlights) */}
+      {/* 🔹 Projects Section */}
       <section id="projects" className="py-20 px-6 md:px-20">
         <h2 className="text-3xl font-bold text-purple-400 mb-10 text-center">Projects</h2>
         <div className="grid md:grid-cols-2 gap-8">
@@ -157,8 +171,8 @@ export default function App() {
           <div className="bg-gray-800 p-8 rounded-2xl shadow-md hover:shadow-purple-500/40 transition flex items-center space-x-6">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqugbX1bi7VLceyM1W3jpaDKJkcXJuHgSuPg&s" alt="B.Tech Icon" className="w-28 h-28"/>
             <div>
-              <h3 className="text-2xl font-semibold text-white mb-2">B.Tech in Computer Science & Engineering (AI & ML)</h3>
-              <p className="text-gray-300 mb-1">BVCITS</p>
+              <h3 className="text-2xl font-semibold text-white mb-2">B.Tech in CSE-(Artificial Intelligence & Machine Learning)</h3>
+              <p className="text-gray-300 mb-1">Bonam Venkata Chalamayya Institute of Technology and Science (BVCITS)</p>
               <p className="text-gray-400">2022 - 2026 <h1>7.25 CGPA</h1></p>
             </div>
           </div>
@@ -168,7 +182,7 @@ export default function App() {
             <img src="https://content.jdmagicbox.com/v2/comp/amalapuram/w5/9999p8856.8856.230906121138.s5w5/catalogue/sri-chaitanya-college-vanacharla-vari-street-amalapuram-colleges-KFxYMAm2qF.jpg" alt="Intermediate Icon" className="w-28 h-28"/>
             <div>
               <h3 className="text-2xl font-semibold text-white mb-2">Intermediate (MPC)</h3>
-              <p className="text-gray-300 mb-1">Sri Chaitanya Junior College, Rajahmundry</p>
+              <p className="text-gray-300 mb-1">Sri Chaitanya Junior College, Amalapuram</p>
               <p className="text-gray-400">2020 - 2022<h1>63%</h1> </p>
             </div>
           </div>
